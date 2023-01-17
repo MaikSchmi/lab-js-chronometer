@@ -18,6 +18,10 @@ class Chronometer {
   getSeconds() {
     return Math.round(this.currentTime % 60);
   }
+  
+  getCentiseconds() {
+    return currentTime;
+  }
 
   computeTwoDigitNumber(value) {
     let newVal = "";
@@ -41,10 +45,3 @@ class Chronometer {
     return `${this.computeTwoDigitNumber(this.getMinutes())}:${this.computeTwoDigitNumber(this.getSeconds())}`;
   }
 }
-
-/* let myChron = new Chronometer;
-myChron.intervalId = 1;
-console.log(myChron.getSeconds(59))
-console.log(myChron.getSeconds(119))
-console.log(myChron.getSeconds(179))
-console.log(myChron.getSeconds(5000)) */
