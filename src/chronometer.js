@@ -12,16 +12,10 @@ class Chronometer {
   }
 
   getMinutes() {
-    if (this.intervalId === null) {
-      return 0;
-    }
     return Math.floor(this.currentTime / 60);
   }
 
   getSeconds() {
-    if (this.intervalId === null) {
-      return 0;
-    }
     return Math.round(this.currentTime % 60);
   }
 
